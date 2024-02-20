@@ -123,7 +123,7 @@ import Entities.User;
             mainPageFrame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
             mainPageFrame.setLocationRelativeTo(null);
             mainPageFrame.setResizable(false);
-            ImageIcon VTagIcon = new ImageIcon("Images\\VTagIcon.png");
+            ImageIcon VTagIcon = new ImageIcon("Images/VTagIcon.png");
             mainPageFrame.setIconImage(VTagIcon.getImage());
             mainPageFrame.getContentPane().setBackground(Color.white);
 
@@ -131,7 +131,7 @@ import Entities.User;
             LSPanel.setBounds(10,30,240,600);
 
             profileDPLabel = new JLabel();
-            profileDPLabel.setIcon(new ImageIcon("Images\\profileDPImageBoy.png"));
+            profileDPLabel.setIcon(new ImageIcon("Images/profileDPImageBoy.png"));
             profileDPLabel.setBounds(90,20,64,70);
 
             profileNameLabel = new JLabel(username,SwingConstants.CENTER);
@@ -146,7 +146,7 @@ import Entities.User;
             postsButton = new RoundedButton("Posts",10,Color.BLACK,Color.black);
             postsButton.setForeground(Color.white);
             postsButton.setBackground(Color.black);
-            postsButton.setIcon(new ImageIcon("Images\\postsButtonIconWhite.png"));
+            postsButton.setIcon(new ImageIcon("Images/postsButtonIconWhite.png"));
             postsButton.setBounds(20,170,200,40);
             postsButton.setBorder(new LineBorder(Color.white,1));
 
@@ -155,13 +155,13 @@ import Entities.User;
                     if(!postsActive){
                         postsButton.setForeground(Color.white);
                         postsButton.setBackground(Color.black);
-                        postsButton.setIcon(new ImageIcon("Images\\postsButtonIconWhite.png"));}
+                        postsButton.setIcon(new ImageIcon("Images/postsButtonIconWhite.png"));}
                 }
                 public void mouseExited(MouseEvent e){
                     if(!postsActive){
                         postsButton.setForeground(Color.black);
                         postsButton.setBackground(Color.white);
-                        postsButton.setIcon(new ImageIcon("Images\\postsButtonIconBlack.png"));}
+                        postsButton.setIcon(new ImageIcon("Images/postsButtonIconBlack.png"));}
                 }
                 public void mouseClicked(MouseEvent e){
                         chatThreadActive = false;
@@ -170,13 +170,13 @@ import Entities.User;
                         messagingActive = false;
                         postsButton.setForeground(Color.white);
                         postsButton.setBackground(Color.black);
-                        postsButton.setIcon(new ImageIcon("Images\\postsButtonIconWhite.png"));
+                        postsButton.setIcon(new ImageIcon("Images/postsButtonIconWhite.png"));
                         friendsButton.setForeground(Color.black);
                         friendsButton.setBackground(Color.white);
-                        friendsButton.setIcon(new ImageIcon("Images\\friendsButtonIconBlack.png"));
+                        friendsButton.setIcon(new ImageIcon("Images/friendsButtonIconBlack.png"));
                         messagingButton.setForeground(Color.black);
                         messagingButton.setBackground(Color.white);
-                        messagingButton.setIcon(new ImageIcon("Images\\settingsButtonIconBlack.png"));
+                        messagingButton.setIcon(new ImageIcon("Images/settingsButtonIconBlack.png"));
 
                         RSPanelForPosts.setVisible(true);
                         RSPanelForFriends.setVisible(false);
@@ -194,7 +194,7 @@ import Entities.User;
             else     friendsButton = new RoundedButton("Friends " + x,10,Color.black,Color.black);
             friendsButton.setForeground(Color.black);
             friendsButton.setBackground(Color.white);
-            friendsButton.setIcon(new ImageIcon("Images\\friendsButtonIconBlack.png"));
+            friendsButton.setIcon(new ImageIcon("Images/friendsButtonIconBlack.png"));
             friendsButton.setBounds(20,220,200,40);
             friendsButton.setBorder(new LineBorder(Color.white,1));
 
@@ -203,14 +203,14 @@ import Entities.User;
                     if(!friendsActive){
                         friendsButton.setForeground(Color.white);
                         friendsButton.setBackground(Color.black);
-                        friendsButton.setIcon(new ImageIcon("Images\\friendsButtonIconWhite.png"));
+                        friendsButton.setIcon(new ImageIcon("Images/friendsButtonIconWhite.png"));
                     }
                 }
                 public void mouseExited(MouseEvent e){
                     if(!friendsActive){
                         friendsButton.setForeground(Color.black);
                         friendsButton.setBackground(Color.white);
-                        friendsButton.setIcon(new ImageIcon("Images\\friendsButtonIconBlack.png"));
+                        friendsButton.setIcon(new ImageIcon("Images/friendsButtonIconBlack.png"));
                     }
                 }
                 public void mouseClicked(MouseEvent e){
@@ -221,13 +221,13 @@ import Entities.User;
                     friendsButton.setText("Friends");
                     friendsButton.setForeground(Color.white);
                     friendsButton.setBackground(Color.black);
-                    friendsButton.setIcon(new ImageIcon("Images\\friendsButtonIconWhite.png"));
+                    friendsButton.setIcon(new ImageIcon("Images/friendsButtonIconWhite.png"));
                     postsButton.setForeground(Color.black);
                     postsButton.setBackground(Color.white);
-                    postsButton.setIcon(new ImageIcon("Images\\postsButtonIconBlack.png"));
+                    postsButton.setIcon(new ImageIcon("Images/postsButtonIconBlack.png"));
                     messagingButton.setForeground(Color.black);
                     messagingButton.setBackground(Color.white);
-                    messagingButton.setIcon(new ImageIcon("Images\\settingsButtonIconBlack.png"));
+                    messagingButton.setIcon(new ImageIcon("Images/settingsButtonIconBlack.png"));
 
                     RSPanelForFriends.setVisible(true);
                     friendsListPanel.removeAll();
@@ -246,7 +246,7 @@ import Entities.User;
             messagingButton = new RoundedButton("Messaging",10,Color.black,Color.black);
             messagingButton.setForeground(Color.black);
             messagingButton.setBackground(Color.white);
-            messagingButton.setIcon(new ImageIcon("Images\\settingsButtonIconBlack.png"));
+            messagingButton.setIcon(new ImageIcon("Images/settingsButtonIconBlack.png"));
             messagingButton.setBounds(20,270,200,40);
             messagingButton.setBorder(new LineBorder(Color.white));
 
@@ -255,14 +255,14 @@ import Entities.User;
                     if(!messagingActive){
                         messagingButton.setForeground(Color.white);
                         messagingButton.setBackground(Color.black);
-                        messagingButton.setIcon(new ImageIcon("Images\\settingsButtonIconWhite.png"));
+                        messagingButton.setIcon(new ImageIcon("Images/settingsButtonIconWhite.png"));
                     }
                 }
                 public void mouseExited(MouseEvent e){
                     if(!messagingActive){
                         messagingButton.setForeground(Color.black);
                         messagingButton.setBackground(Color.white);
-                        messagingButton.setIcon(new ImageIcon("Images\\settingsButtonIconBlack.png"));
+                        messagingButton.setIcon(new ImageIcon("Images/settingsButtonIconBlack.png"));
                     }
                 }
                 public void mouseClicked(MouseEvent e){
@@ -271,13 +271,13 @@ import Entities.User;
                     postsActive = false;
                     messagingButton.setForeground(Color.white);
                     messagingButton.setBackground(Color.black);
-                    messagingButton.setIcon(new ImageIcon("Images\\settingsButtonIconWhite.png"));
+                    messagingButton.setIcon(new ImageIcon("Images/settingsButtonIconWhite.png"));
                     friendsButton.setForeground(Color.black);
                     friendsButton.setBackground(Color.white);
-                    friendsButton.setIcon(new ImageIcon("Images\\friendsButtonIconBlack.png"));
+                    friendsButton.setIcon(new ImageIcon("Images/friendsButtonIconBlack.png"));
                     postsButton.setForeground(Color.black);
                     postsButton.setBackground(Color.white);
-                    postsButton.setIcon(new ImageIcon("Images\\postsButtonIconBlack.png"));
+                    postsButton.setIcon(new ImageIcon("Images/postsButtonIconBlack.png"));
 
                     RSPanelforMessaging.setVisible(true);
                     try {
@@ -301,7 +301,7 @@ import Entities.User;
             logoutButton = new RoundedButton("Logout",10,Color.black,Color.black);
             logoutButton.setForeground(Color.black);
             logoutButton.setBackground(Color.white);
-            logoutButton.setIcon(new ImageIcon("Images\\logoutButtonBlack.png"));
+            logoutButton.setIcon(new ImageIcon("Images/logoutButtonBlack.png"));
             logoutButton.setBounds(20,320,200,40);
             logoutButton.setBorder(new LineBorder(Color.white));
 
@@ -309,12 +309,12 @@ import Entities.User;
                 public void mouseEntered(MouseEvent e){
                         logoutButton.setForeground(Color.white);
                         logoutButton.setBackground(Color.black);
-                        logoutButton.setIcon(new ImageIcon("Images\\logoutButtonWhite.png"));
+                        logoutButton.setIcon(new ImageIcon("Images/logoutButtonWhite.png"));
                 }
                 public void mouseExited(MouseEvent e){
                         logoutButton.setForeground(Color.black);
                         logoutButton.setBackground(Color.white);
-                        logoutButton.setIcon(new ImageIcon("Images\\logoutButtonBlack.png"));
+                        logoutButton.setIcon(new ImageIcon("Images/logoutButtonBlack.png"));
                 }
                 public void mouseClicked(MouseEvent e){
                     mainPageFrame.dispose();

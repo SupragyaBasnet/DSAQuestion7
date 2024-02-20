@@ -17,6 +17,7 @@ import java.sql.Statement;
 import java.util.Random;
 import java.sql.SQLException;
 
+
 public class MainMenu {
     //Frames
     JFrame mainMenuFrame;
@@ -80,21 +81,21 @@ public class MainMenu {
         findjobsthroughyour = new JLabel("Welcome to ");
         findjobsthroughyour.setFont(new Font("Helvetica",Font.PLAIN,40));
         findjobsthroughyour.setForeground(new Color(0, 0, 255));
-        findjobsthroughyour.setBounds(500, 50, 700, 45);
+        findjobsthroughyour.setBounds(100, 50, 700, 45);
 
         community = new JLabel("Riposte App");
         community.setFont(new Font("Helvetica",Font.PLAIN,40));
         community.setForeground(new Color(0, 0, 255));
-        community.setBounds(500, 95, 700, 45);
+        community.setBounds(100, 95, 700, 45);
 
         loginUsernameLabel = new JLabel("Username");
         loginUsernameLabel.setFont(new Font("Helvetica", Font.PLAIN,14));
         loginUsernameLabel.setForeground(new Color(0, 0, 0, 191));
-        loginUsernameLabel.setBounds(420,170,100,20);
+        loginUsernameLabel.setBounds(100,170,100,20);
 
 
         loginUsernameTextfield = new JTextField();
-        loginUsernameTextfield.setBounds(420,195,310,45);
+        loginUsernameTextfield.setBounds(100,195,310,45);
         loginUsernameTextfield.setForeground(new Color(0, 0, 0, 191));
         loginUsernameTextfield.setBorder(new LineBorder(Color.decode("#000000")));
         loginUsernameTextfield.setFont(new Font("Helvetica", Font.PLAIN, 20));
@@ -114,10 +115,10 @@ public class MainMenu {
         loginPasswordLabel = new JLabel("Password");
         loginPasswordLabel.setFont(new Font("Helvetica", Font.PLAIN,14));
         loginPasswordLabel.setForeground(new Color(0, 0, 0, 191));
-        loginPasswordLabel.setBounds(420,270,100,20);
+        loginPasswordLabel.setBounds(100,270,100,20);
 
         loginPasswordTextfield = new JPasswordField();
-        loginPasswordTextfield.setBounds(420,295,310,45);
+        loginPasswordTextfield.setBounds(100,295,310,45);
         loginPasswordTextfield.setForeground(new Color(0, 0, 0, 191));
         loginPasswordTextfield.setBorder(new LineBorder(Color.decode("#000000")));
         loginPasswordTextfield.setFont(new Font("Helvetica", Font.PLAIN, 20));
@@ -137,7 +138,7 @@ public class MainMenu {
         forgotpassword = new JLabel("Forgot password?");
         forgotpassword.setFont(new Font("Helvetica",Font.BOLD,14));
         forgotpassword.setForeground(Color.gray);
-        forgotpassword.setBounds(420,350,150,45);
+        forgotpassword.setBounds(100,350,150,45);
 
         forgotpassword.addMouseListener(new MouseAdapter(){
             @Override
@@ -172,15 +173,15 @@ public class MainMenu {
 
         forgotPasswordFrame = new JFrame();
         forgotPasswordFrame.setTitle("Riposte");
-        forgotPasswordFrame.setSize(420,300);
+        forgotPasswordFrame.setSize(100,300);
         forgotPasswordFrame.setLocationRelativeTo(null);
         forgotPasswordFrame.setBackground(Color.white);
 
         EmailLabelForForgotPassword.setFont(new Font("Helvetica",Font.BOLD,15));
-        EmailLabelForForgotPassword.setBounds(420,80,500,18);
+        EmailLabelForForgotPassword.setBounds(100,80,500,18);
 
         otpTextField.setFont(new Font("Helvetica",Font.BOLD,12));
-        otpTextField.setBounds(420,110,300,40);
+        otpTextField.setBounds(100,110,300,40);
         otpTextField.setText("Enter OTP");
         otpTextField.setBorder(new LineBorder(Color.gray,2));
 
@@ -242,7 +243,7 @@ public class MainMenu {
         loginButton.setBackground(new Color(255, 165, 0)); 
         loginButton.setForeground(Color.BLACK); // Black color for text
         loginButton.setFont(new Font("Helvetica",Font.BOLD,15));
-        loginButton.setBounds(420,400,310,45);
+        loginButton.setBounds(100,400,310,45);
 
         loginButton.addMouseListener(new MouseAdapter(){
             @Override
@@ -300,16 +301,15 @@ public class MainMenu {
             }
         });
 
-        ImageIcon sideimg = new ImageIcon("Images\\loginPageSidePage.jpg");
+        ImageIcon sideimg = new ImageIcon("Images/loginPageSidePage.jpg");
         sideImage = new JLabel(sideimg);
-        sideImage.setBounds(300,-80,1000,1000);
-
+        sideImage.setBounds(400,-80,1000,1000);
         newAccountButton = new JButton("New ? Join now");
         newAccountButton.setBackground(new Color(255,255,255));
         newAccountButton.setForeground(new Color(0, 0, 0, 191));
         newAccountButton.setFont(new Font("Helvetica",Font.PLAIN,15));
         newAccountButton.setBorder(new LineBorder(new Color(0, 0, 0, 191)));
-        newAccountButton.setBounds(420,465,310,45);
+        newAccountButton.setBounds(100,465,310,45);
 
         newAccountButton.addMouseListener(new MouseAdapter(){
             @Override
@@ -330,11 +330,15 @@ public class MainMenu {
         signupPanel = new JPanel();
         signupPanel.setBackground(new Color(243,242,240));
         signupPanel.setBounds(0,0,1200,700);
+        
+        
 
         makethemostoutofurprofessionallife = new JLabel("Sign-Up");
         makethemostoutofurprofessionallife.setForeground(new Color(0,0,245));
         makethemostoutofurprofessionallife.setFont(new Font("Helvetica",Font.PLAIN,30));
         makethemostoutofurprofessionallife.setBounds(530,60,1000,40);
+
+       
 
         signupMainPanel = new JPanel();
         signupMainPanel.setBackground(new Color(255,255,255));
